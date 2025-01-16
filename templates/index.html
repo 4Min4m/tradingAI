@@ -1,0 +1,24 @@
+{% extends "layout.html" %}
+
+{% block content %}
+<section id="overview">
+    <h2>Current Prices</h2>
+    <div id="prices">
+        <!-- قیمت‌ها اینجا نمایش داده می‌شوند -->
+    </div>
+</section>
+
+<section id="indicators">
+    <h2>Indicators</h2>
+    <ul>
+        <li><strong>SMA:</strong> <span id="sma">Loading...</span></li>
+        <li><strong>RSI:</strong> <span id="rsi">Loading...</span></li>
+        <li><strong>MACD:</strong> <span id="macd">Loading...</span></li>
+    </ul>
+</section>
+
+<section id="signal">
+    <h2>Signal</h2>
+    <p id="decision">Waiting for prediction...</p>
+</section>
+{% endblock %}
